@@ -1,7 +1,7 @@
 spring:
-  config:
-    import: configserver:http://localhost:8888
   application:
     name: order-service-1
+  config:
+    import: optional:configserver:http://localhost:8888
   profiles:
     active: dev
